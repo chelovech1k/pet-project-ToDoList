@@ -1,0 +1,159 @@
+@font-face {
+    font-family: "HelveticaNeueCyr";
+    src: url("helveticaneuecyr_roman.otf") format("opentype");
+}
+body {
+    font-family: HelveticaNeueCyr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F0F0F0;
+    min-width: 320px;
+    max-width: 420px;
+    flex: 1 0 0;
+}
+.layout-tasks {
+    width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+.top-performers {
+    width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    box-sizing: border-box; 
+
+}
+.tasks-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tasks-header h2 {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+.tasks-header .dropdown-arrow {
+    margin-left: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+.actions button {
+    background: none;
+    color:#777;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.dropdown-menu {
+    display: none;
+    list-style: none;
+    padding: 8px;
+    margin: 10px 0;
+    color: #777;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+.task:last-child {
+    border-bottom: none;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.task-info {
+    display: flex;
+    align-items: flex-start;
+}
+.status-icon {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+    margin-top: 2px;
+}
+
+.status-icon.green {
+    background-color: #30d158;
+}
+.status-icon.orange {
+    background-color: #ff9f0a;
+}
+.status-icon.red {
+    background-color: #ff453a;
+}
+.task-details {
+    display: flex;
+    flex-direction: column;
+}
+.task-details h3 {
+    margin: 0;
+    font-size: 16px;
+    word-wrap: break-word;
+}
+.task-details p {
+    margin: 4px 0 0;
+    font-size: 14px;
+    color: #777;
+}
+.avatars {
+    display: flex;
+}
+.avatars img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-left: -8px;
+    border: 2px solid #fff;
+}
+.performers-list {
+    display: flex;
+    justify-content: space-around;
+}
+.performer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.performer img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.performer-name {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #777;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -20px;
+}
